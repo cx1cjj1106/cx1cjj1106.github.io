@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>产品经理如何做数据分析 | PM &amp; Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在脉脉上听了Pmcaff的阿德老师分享后的一些记录。
+产品经理的第六感产品经理应该有极高的数据敏感度，表现在两个阶段：
+
+产品设计阶段：prd完成后，就要提取数据需求，然后告知技术进行埋点；
+如果能够在技术基础架构上实现无痕埋点，则可在产品上线运行后，通过平台侧的配置进行“热埋点”，实现任何数据的采集。        
+
+
+产品运营阶段：要自己整理、分析数据，光看结果是不行的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品经理如何做数据分析">
+<meta property="og:url" content="http://yoursite.com/2015/08/24/dataAnalysis_PM/index.html">
+<meta property="og:site_name" content="PM & Tech">
+<meta property="og:description" content="在脉脉上听了Pmcaff的阿德老师分享后的一些记录。
+产品经理的第六感产品经理应该有极高的数据敏感度，表现在两个阶段：
+
+产品设计阶段：prd完成后，就要提取数据需求，然后告知技术进行埋点；
+如果能够在技术基础架构上实现无痕埋点，则可在产品上线运行后，通过平台侧的配置进行“热埋点”，实现任何数据的采集。        
+
+
+产品运营阶段：要自己整理、分析数据，光看结果是不行的。">
+<meta property="og:image" content="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E5%B7%A5%E4%BD%9C.jpg">
+<meta property="og:image" content="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9B%9B%E5%A4%A7%E4%BD%93%E7%B3%BB.jpg">
+<meta property="og:image" content="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E7%94%B5%E5%95%86%E8%A1%8C%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%87%E6%A0%87.jpg">
+<meta property="og:updated_time" content="2015-08-24T05:46:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品经理如何做数据分析">
+<meta name="twitter:description" content="在脉脉上听了Pmcaff的阿德老师分享后的一些记录。
+产品经理的第六感产品经理应该有极高的数据敏感度，表现在两个阶段：
+
+产品设计阶段：prd完成后，就要提取数据需求，然后告知技术进行埋点；
+如果能够在技术基础架构上实现无痕埋点，则可在产品上线运行后，通过平台侧的配置进行“热埋点”，实现任何数据的采集。        
+
+
+产品运营阶段：要自己整理、分析数据，光看结果是不行的。">
+  
+    <link rel="alternative" href="/atom.xml" title="PM &amp; Tech" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xl3v1.com1.z0.glb.clouddn.com/errno-404" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Alex Chen</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Product - Technology - Management</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/categories/产品">产品</a></li>
+				        
+							<li><a href="/categories/技术">技术</a></li>
+				        
+							<li><a href="/categories/管理">管理</a></li>
+				        
+							<li><a href="/categories/随笔">随笔</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/cx1cjj1106" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/cx1cjj1106" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/chen-xi-31" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/成长/" style="font-size: 10px;">成长</a> <a href="/tags/数据/" style="font-size: 10px;">数据</a> <a href="/tags/领悟/" style="font-size: 10px;">领悟</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">smarT,fasT,Team</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Alex Chen</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<!--<div class="profilepic">
+				<img lazy-src="http://7xl3v1.com1.z0.glb.clouddn.com/errno-404" class="js-avatar">
+			</div>-->
+			<a href="/" class="profilepic">
+				
+				<img lazy-src="http://7xl3v1.com1.z0.glb.clouddn.com/errno-404" class="js-avatar">
+				
+			</a>
+			<hgroup>
+			  <h1 class="header-author">Alex Chen</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Product - Technology - Management</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/categories/产品">产品</a></li>
+		        
+					<li><a href="/categories/技术">技术</a></li>
+		        
+					<li><a href="/categories/管理">管理</a></li>
+		        
+					<li><a href="/categories/随笔">随笔</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/cx1cjj1106" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/cx1cjj1106" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/chen-xi-31" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-dataAnalysis_PM" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/24/dataAnalysis_PM/" class="article-date">
+  	<time datetime="2015-08-24T05:46:03.000Z" itemprop="datePublished">2015-08-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      产品经理如何做数据分析
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据/">数据</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/产品/">产品</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      <div id="toc" class="toc-article">
+    <div class="toc-title">目录</div>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#产品经理的第六感"><span class="toc-number">1.</span> <span class="toc-text">产品经理的第六感</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析面面观"><span class="toc-number">2.</span> <span class="toc-text">数据分析面面观</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#分析方法"><span class="toc-number">2.1.</span> <span class="toc-text">分析方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析四大体系"><span class="toc-number">2.2.</span> <span class="toc-text">数据分析四大体系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析中的“坑”"><span class="toc-number">2.3.</span> <span class="toc-text">数据分析中的“坑”</span></a></li></ol></li></ol>
+</div>
+      
+      <p>在脉脉上听了Pmcaff的阿德老师分享后的一些记录。</p>
+<h1 id="产品经理的第六感">产品经理的第六感</h1><p>产品经理应该有极高的数据敏感度，表现在两个阶段：</p>
+<ol>
+<li>产品设计阶段：prd完成后，就要提取数据需求，然后告知技术进行埋点；<blockquote>
+<p>如果能够在技术基础架构上实现无痕埋点，则可在产品上线运行后，通过平台侧的配置进行“热埋点”，实现任何数据的采集。        </p>
+</blockquote>
+</li>
+<li>产品运营阶段：要自己整理、分析数据，光看结果是不行的。</li>
+</ol>
+<a id="more"></a>
+<h1 id="数据分析面面观">数据分析面面观</h1><p><img src="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E5%B7%A5%E4%BD%9C.jpg" alt="" title="数据分析流程"></p>
+<h2 id="分析方法">分析方法</h2><ul>
+<li>比例分析法：多用于用户人群的划分（饼图等）；</li>
+<li>对比分析法：同比、环比；</li>
+<li>异常拐点分析法：分析拐点原因。</li>
+</ul>
+<h2 id="数据分析四大体系">数据分析四大体系</h2><p><img src="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9B%9B%E5%A4%A7%E4%BD%93%E7%B3%BB.jpg" alt="" title="数据分析四大体系"></p>
+<ul>
+<li>用户行为体系：反映体验、逻辑、运营问题，典型数据有-操作、行为、转化率等；</li>
+<li>推广体系：用户来源、营销效果等；</li>
+<li>物料体系：电商中应用更多，供应链、库存、热销产品等；</li>
+<li>会员体系：一个经验值足够吸引你做这个-获取新用户成本是维护老用户成本的5倍。<br><img src="http://7xl3v1.com1.z0.glb.clouddn.com/blog%E7%94%B5%E5%95%86%E8%A1%8C%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%87%E6%A0%87.jpg" alt="" title="电商行业数据分析指标"></li>
+</ul>
+<h2 id="数据分析中的“坑”">数据分析中的“坑”</h2><ol>
+<li>时间维度对比<blockquote>
+<p>没有时间标的，或者说不去考虑时间背后的大背景与环境，数据对比是没有意义的，举例来讲：线上旅游产品的订单数，10月份（国庆节）与11月份一定差别很大，所以最好做同比。</p>
+</blockquote>
+</li>
+<li>计算方法（指标含义）<blockquote>
+<p>阿德老师讲了一个笑话：某公司提了一个数据，邮件召回率95%，这个太神奇了，一问计算方法，答曰：周五发了10w封邮件，周一有9w5的人登录使用…（具体数字别太计较，领会精神）。</p>
+</blockquote>
+</li>
+<li>从综合效能判断数据的变化，而不是断章取义<blockquote>
+<p>栗子：某产品9月的日活1w，转化付费用户1000，10月日活5000，转化付费用户500，请问：是不是产品汪没搞好？答案是：要看综合效能，如果9月单用户获取成本是100元，而10月是10元，最终结果就不一定了。</p>
+</blockquote>
+</li>
+<li>获取完整链路数据 vs 片段数据：<blockquote>
+<p>完整链路是指从用户进入产品，到达到目标功能所有的使用轨迹（包含页面跳转和功能操作），在技术上，如果在web端，需要在跳转过程中携带相关信息（在url上添加参数）到下一页面，用于打点记录以及在后台匹配单用户的所有操作list。</p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/16/endless_growingup/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一篇：一生都学不完</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="dataAnalysis_PM" data-title="产品经理如何做数据分析" data-url="http://yoursite.com/2015/08/24/dataAnalysis_PM/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Alex Chen
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
